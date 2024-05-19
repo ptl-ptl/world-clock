@@ -28,6 +28,19 @@ function updateTime() {
       "HH:mm:ss [<small>]A[</small>]"
     );
   }
+
+  //Dubai
+  let dubaiElement = document.querySelector("#dubai");
+  if (dubaiElement) {
+    let dubaiDateElement = dubaiElement.querySelector(".date");
+    let dubaiTimeElement = dubaiElement.querySelector(".time");
+    let dubaiTime = moment().tz("Asia/Dubai");
+
+    dubaiDateElement.innerHTML = dubaiTime.format("MMMM Do yyyy");
+    dubaiTimeElement.innerHTML = dubaiTime.format(
+      "HH:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
