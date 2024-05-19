@@ -1,7 +1,64 @@
 body {
-  background-color: rgb(237, 234, 231);
-  color: rgb(72, 64, 64);
+  background-color: rgb(227, 231, 236);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.container {
+  background-color: rgb(234, 234, 234);
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 16px 16px 35px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+select {
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  padding: 8px;
+  border: 1.5px solid rgba(31, 31, 31, 0.2);
+  border-radius: 7px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px 0;
+  border-bottom: 2px dashed rgba(31, 31, 31, 0.2);
+}
+
+.city:last-child {
+  border: none;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 28px;
+}
+
+.date {
+  opacity: 0.7;
+}
+
+.time {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
 footer {
   text-align: center;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
 }
